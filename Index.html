@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            background-color: #f6f1e7;   /* COLOR 1: page background */
+            color: Black;              /* COLOR 2: main text */
+        }
+
+        /* vertical nav bar left */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 260px;
+            height: 100%;
+            background-color: #487800;   /* COLOR 3: sidebar background */
+            overflow: auto;
+        }
+
+        .sidebar h2 {
+            margin: 0;
+            padding: 28px 0;
+            text-align: center;
+            font-size: 26px;
+            color: #ffffff;              /* COLOR 4: app name */
+            border-bottom: 1px solid #2f6656;   /* COLOR 5: line under app name */
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 16px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 14px 22px;
+            margin-bottom: 6px;
+            color: #e3efe9;              /* COLOR 6: link text */
+            text-decoration: none;
+            font-size: 17px;
+            border-radius: 8px;
+        }
+
+        .sidebar a:hover {
+            background-color: #e08a3c;   /* COLOR 7: link when the mouse is over it */
+        }
+
+
+               .content {
+            margin-left: 260px;
+            padding: 50px 40px;
+        }
+
+        .content h1 {
+            margin-top: 0;
+            font-size: 34px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>MyApp</h2>
+        <ul>
+            <li><a href="#" class="active">🏠 Dashboard</a></li>
+            <li><a href="analysis.png">📊 Analytics</a></li>
+            <li><a href="projects.png">📁 Projects</a></li>
+            <li><a href="teams.jpg">👥 Team</a></li>
+            <li><a href="RR.gif">📧 Messages‼️</a></li>
+            <li><a href="settings.png">⚙️ Settings</a></li>
+            <li><a href="docs.png">📄 Documents</a></li>
+            <li><a href="bye.png">🚪 Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to the Dashboard</h1>
+        <p>Click the links on the left to open up some new pages. Don't forget to check your messages!</p>
+    </div>
+
+</body>
+</html>
